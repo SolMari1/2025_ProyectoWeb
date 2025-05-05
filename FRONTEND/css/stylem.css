@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #9cfffc;
+    background-color: #F5DEB3;
     color: #333;
     line-height: 1.6;
     text-align: center;
@@ -21,7 +21,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 5%;
-    background-color: #9cfffc;
+    background-color: #F5DEB3;
     box-shadow: 6px 4px 6px rgba(5, 5, 5, 0.4);
     position: sticky;
     top: 0;
@@ -108,8 +108,8 @@ body {
 }
 
 .submenu a:hover {
-    background-color: #befaf8 !important;
-    color: #2c3e50 !important;
+    background-color: #A0522D !important;
+    color: #000 !important;
     padding-left: 20px;
 }
 

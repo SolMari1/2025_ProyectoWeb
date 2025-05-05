@@ -14,62 +14,39 @@
             <img src="/galeria/logoWed.jpeg" alt="Logo">
             <h1>REGIPET</h1>
         </div>
+
         <nav class="nav">
-            <a href="#home">Inicio</a>
             <div class="menu-item">
-                <a href="#">Adopción</a>
+                <a href="regipet.html">Menu</a>
                 <div class="submenu">
-                    <a href="#">Registro</a>
-                    <a href="#">Información General</a>
+                    <a href="regipet.html">volver al inicio</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="menu-item">
+                <a href="#">Ingreso</a>
+                <div class="submenu">
+                    <a href="Registro.html">Registro</a>
+                    <a href="#">Login</a>
                 </div>
             </div>
             <div class="menu-item">
-                <a href="#">Búsqueda</a>
+                <a href="#">Busqueda</a>
                 <div class="submenu">
                     <a href="#">Encontrados</a>
                     <a href="#">Perdidos</a>
                 </div>
             </div>
             <div class="menu-item">
-                <a href="#">Otros</a>
+                <a href="#">Adopción</a>
                 <div class="submenu">
-                    <a href="#">Información</a>
-                    <a href="#">Contacto</a>
+                    <a href="#">Registrar</a>
+                    <a href="#">Adoptar</a>
                 </div>
             </div>
         </nav>
-
-        <script>
-            // Para dispositivos móviles: hacer clic en lugar de hover
-            document.addEventListener('DOMContentLoaded', function() {
-                const menuItems = document.querySelectorAll('.menu-item');
-                
-                if (window.innerWidth <= 768) {
-                    menuItems.forEach(item => {
-                        const link = item.querySelector('a');
-                        const submenu = item.querySelector('.submenu');
-                        
-                        link.addEventListener('click', function(e) {
-                            e.preventDefault();
-                            
-                            // Cerrar otros submenús abiertos
-                            document.querySelectorAll('.submenu').forEach(menu => {
-                                if (menu !== submenu) {
-                                    menu.style.display = 'none';
-                                }
-                            });
-                            
-                            // Alternar el submenú actual
-                            if (submenu.style.display === 'block') {
-                                submenu.style.display = 'none';
-                            } else {
-                                submenu.style.display = 'block';
-                            }
-                        });
-                    });
-                }
-            });
-        </script>
         
     </header>
 
@@ -79,6 +56,16 @@
         <h1>Ayudamos a que estén juntos a ti 💖💖💖</h1>
     </div>
         
+    <div class="video">
+        <img src="amoranimal.jpg" alt="animales">
+    <!--
+        <video autoplay loop muted>
+            <source src="perritoMirando.mp4" type="video/mp4">
+        </video>-->
+
+    </div>
+
+    <!--Carrusel-->
         
     <div class="carousel-container">
         <button class="prev">❮</button>
@@ -91,66 +78,8 @@
         </div>
         <button class="next">❯</button>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const carousel = document.querySelector('.carousel');
-            const images = document.querySelectorAll('.carousel img');
-            const prevBtn = document.querySelector('.prev');
-            const nextBtn = document.querySelector('.next');
-            
-            // Clonamos las imágenes para efecto infinito
-            const firstClone = images[0].cloneNode(true);
-            const lastClone = images[images.length-1].cloneNode(true);
-            
-            carousel.appendChild(firstClone);
-            carousel.insertBefore(lastClone, images[0]);
-            
-            let currentIndex = 1;
-            const imageWidth = images[0].clientWidth + 40; // Ancho + margen
-            
-            function updateCarousel() {
-                carousel.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
-            }
-
-            function nextSlide() {
-                currentIndex++;
-                carousel.style.transition = 'transform 0.5s ease-in-out';
-                updateCarousel();
-                
-                if (currentIndex >= images.length + 0) {
-                    setTimeout(() => {
-                        carousel.style.transition = 'none';
-                        currentIndex = 1;
-                        updateCarousel();
-                    }, 500);
-                }
-            }
-
-            function prevSlide() {
-                currentIndex--;
-                carousel.style.transition = 'transform 0.5s ease-in-out';
-                updateCarousel();
-                
-                if (currentIndex <= 0) {
-                    setTimeout(() => {
-                        carousel.style.transition = 'none';
-                        currentIndex = images.length;
-                        updateCarousel();
-                    }, 500);
-                }
-            }
-
-            nextBtn.addEventListener('click', nextSlide);
-            prevBtn.addEventListener('click', prevSlide);
-
-            // Autoplay (opcional)
-            setInterval(nextSlide, 3000);
-        });
-    </script>
     
-
-    <!-- Contenido principal -->
+    <!-- imagenes de busqueda -->
 
     <div class="envio">
 
@@ -170,29 +99,14 @@
 
 </div>
     
-
     <!-- Pie de página -->
     <footer class="footer">
         <p>© 2025 REGIPET. Proyecto ProWed.</p>
         <p>Contactenos : ###########</p>
 
     </footer>
-
-    <script>
-        let index = 0;
-        const slides = document.querySelector('.carousel');
-        const totalSlides = slides.children.length;
-
-        function moveSlide(step) {
-            index += step;
-            if (index < 0) index = totalSlides - 1;
-            if (index >= totalSlides) index = 0;
-            slides.style.transition = "transform 0.5s ease-in-out";
-            slides.style.transform = `translateX(${-index * 100}%)`;
-        }
-
-        setInterval(() => moveSlide(1), 3000);
-    </script>
+    <script src="/FRONTEND/js/scriptN.js"></script>
+    <script src="/FRONTEND/js/scriptC.js"></script> 
 
 </body>
 </html>
