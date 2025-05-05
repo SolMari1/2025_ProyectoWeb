@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Mi Plataforma</title>
+    <link rel="stylesheet" href="/FRONTEND/css/styleIR.css">
+    <link rel="stylesheet" href="/FRONTEND/css/stylem.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="/galeria/logoWed.jpeg" alt="Logo">
+            <h1>REGIPET</h1>
+        </div>
+
+        
+        <nav class="nav">
+            <div class="menu-item">
+                <a href="regipet.html">Menu</a>
+                <div class="submenu">
+                    <a href="regipet.html">volver al inicio</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="menu-item">
+                <a href="#">Ingreso</a>
+                <div class="submenu">
+                    <a href="Registro.html">Registro</a>
+                    <a href="#">Login</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <a href="#">Busqueda</a>
+                <div class="submenu">
+                    <a href="#">Encontrados</a>
+                    <a href="#">Perdidos</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <a href="#">Adopción</a>
+                <div class="submenu">
+                    <a href="#">Registrar</a>
+                    <a href="#">Adoptar</a>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+
+    <div class="registro-container">
+        <h1>Regístrate</h1>
+        <form id="formRegistro">
+            <div class="form-group">
+                <label for="nombre">Nombre completo:</label>
+                <input 
+                    type="text" 
+                    id="nombre" 
+                    name="nombre" 
+                    required>
+            </div>
+            
+            <div class="form-group">
+                <label for="correo">Correo electrónico:</label>
+                <input 
+                    type="email" 
+                    id="correo" 
+                    name="correo" 
+                    placeholder="Ej: usuario@example.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input 
+                    type="tel" 
+                    id="telefono" 
+                    name="telefono" 
+                    placeholder="Ej: 3458942105 "required>
+            </div>
+            
+            <div class="form-group">
+                <label for="usuario">Nombre de usuario:</label>
+                <input 
+                    type="text" 
+                    id="usuario" 
+                    name="usuario" 
+                    required>
+            </div>
+            
+            <div class="form-group">
+                <label for="contrasena">Contraseña:</label>
+                <input 
+                    type="password" 
+                    id="contrasena" 
+                    name="contrasena" 
+                    placeholder="Mínimo 8 caracteres" required>
+            </div>
+            
+            <div class="button-group">
+                <button type="submit" class="btn-guardar">Guardar</button>
+                <button type="button" class="btn-login" onclick="window.location.href='login.html'">Login</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
