@@ -1,0 +1,71 @@
+/*c aja de registro*/
+.registro-container {
+    background-color: #6D7B8D;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 26px 26px  rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin: 0  auto; 
+    margin: 40px auto; 
+        
+}
+
+h1 {
+    color: #000;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #000;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+input:focus {
+    border-color: #4a535f;
+    outline: none;
+}
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-guardar {
+    background-color: #A0522D;
+    color: #000;
+}
+.btn-guardar:hover {
+    background-color: #A0522D;
+}
+.btn-login {
+    background-color: #A0522D;
+    color: #000;
+}
+.btn-login:hover {
+    background-color: #8a4526;
+}

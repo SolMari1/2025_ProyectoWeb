@@ -1,0 +1,199 @@
+.contenedor-encontrados {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .titulo-encontrados {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+  }
+
+    .formulario-perro {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.4s ease;
+  }
+
+  .formulario-perro label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+
+  .formulario-perro input, .formulario-perro select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .formulario-perro button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .card {
+    background-color: #fefefe;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .info-perro {
+    padding: 15px;
+    text-align: left;
+  }
+
+  .info-perro p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+  }
+
+  .info-perro strong {
+    color: #444;
+  }
+
+  #btnMostrarFormulario {
+    margin-top: 30px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  #btnMostrarFormulario:hover {
+    background-color: #0056b3;
+  }
+
+  .formulario-perro {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.4s ease;
+  }
+
+  .formulario-perro.mostrar {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .formulario-perro input,
+  .formulario-perro textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+
+  .formulario-perro button {
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .formulario-perro button:hover {
+    background-color: #218838;
+  }
+
+  .formulario-perro-desplegable {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+}
+
+.formulario-perro-desplegable label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.formulario-perro-desplegable input,
+.formulario-perro-desplegable select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.formulario-perro-desplegable button {
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.formulario-perro-desplegable button:hover {
+  background-color: #0056b3;
+}
+
+.btn-adoptar {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007bff; /* Azul */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-adoptar:hover {
+  background-color: #0056b3; /* Azul más oscuro al hacer hover */
+}

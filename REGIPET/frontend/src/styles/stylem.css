@@ -1,0 +1,163 @@
+/* Estilo*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/*cuerpo de la pag*/
+
+body {
+    background-color: #F5DEB3;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* caja de arriba donde esta el menu y logo #9cfffc*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #F5DEB3;
+    box-shadow: 6px 4px 6px rgba(5, 5, 5, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.descripcion {
+    padding: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/*logo imagen*/
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+/*estilo de la letra*/
+.logo h1 {
+    font-size: 40px;
+    margin-left: 30px;
+    color: #070707;
+}
+
+/* menu principal caja que los mantiene horizontal */
+
+.nav {
+    display: flex;
+    gap: 50px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    
+}
+
+/*letra de las opciones del menu*/
+.nav > a, .menu-item > a {
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav > a:hover, .menu-item > a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* SubMenus Estilo  background-color: rgb(167, 213, 231) */
+
+.btn-cerrar {
+  background-color: #d9534f;
+  color: black;
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-cerrar:hover {
+  background-color: #c9302c;
+}
+
+.menu-item {
+    position: relative;
+    background-color: #6D7B8D;
+    border-radius: 8px;
+    margin: auto;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 5, 10, 0.95);
+    min-width: 180px;
+    border-radius: 8px;
+    padding: 10px 0;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.submenu a {
+    display: block;
+    padding: 8px 15px;
+    color: white !important;
+    text-decoration: none;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+}
+
+.submenu a:last-child {
+    border-bottom: none;
+}
+
+.submenu a:hover {
+    background-color: #A0522D !important;
+    color: #000 !important;
+    padding-left: 20px;
+}
+
+.menu-item:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    top: 120%;
+}
+
+/* Indicador de SubMenú */
+.menu-item > a::after {
+    content: '▼';
+    font-size: 10px;
+    margin-left: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover > a::after {
+    transform: rotate(180deg);
+}
